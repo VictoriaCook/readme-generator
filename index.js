@@ -32,7 +32,7 @@ const questions = [
       {
         type: "list",
         name: "licence",
-        choices: ["tbc"],
+        choices: ["MIT", "Apache", "tbc"],
       },
       {
         type: "input",
@@ -58,7 +58,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', mdPageContent, (err) => 
+    fs.writeFile(fileName, data, (err) => 
     err ? console.log(err) : console.log('Successfully created README.md file')
     );
 }
@@ -67,15 +67,17 @@ function writeToFile(fileName, data) {
 function init() {
     const prompt = inquirer.createPromptModule();
     prompt(questions)
-    .then(answers) => {
+    .then((answers) => {
         const mdPageContent = generateMd(answers);
-    }
-    writeToFile();
+        writeToFile('./output/README.md', mdPageContent);
+    });
 }
 
 // Function to generate md file
+const generateMd = (mdData) => {
+let { title, description, contents, installation, usage, licence, contribution, tests, github, email } = mdData;
 
-function generateMd = ({ title, description, contents, installation, usage, licence, contribution, tests, github, email }) =>
+let content = 
 `# ${title}
 
 ## Description
@@ -90,7 +92,9 @@ ${contents}
 
 ${installation}
 
-`
+`;
+return content
+}
 
 // Function call to initialize app
 init();

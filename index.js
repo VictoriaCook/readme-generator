@@ -92,6 +92,28 @@ ${contents}
 
 ${installation}
 
+## Usage
+
+${usage}
+
+## Licence
+
+${licence}
+
+## Contributions
+
+${contribution}
+
+## Tests
+
+${tests}
+
+## Questions
+
+Feel free to get in touch with any questions by emailing me at ${email}
+
+My GitHub profile can be accessed at https://github.com/${github}
+
 `;
 return content
 }

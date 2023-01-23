@@ -36,7 +36,7 @@ const questions = [
       },
       {
         type: "input",
-        name: "contributing",
+        name: "contribution",
         message: "Please enter the contribution requirements for your project",
       },
       {
@@ -57,10 +57,40 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile('README.md', mdPageContent, (err) => 
+    err ? console.log(err) : console.log('Successfully created README.md file')
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    const prompt = inquirer.createPromptModule();
+    prompt(questions)
+    .then(answers) => {
+        const mdPageContent = generateMd(answers);
+    }
+    writeToFile();
+}
+
+// Function to generate md file
+
+function generateMd = ({ title, description, contents, installation, usage, licence, contribution, tests, github, email }) =>
+`# ${title}
+
+## Description
+
+${description}
+
+## Table of Contents
+
+${contents}
+
+## Installation
+
+${installation}
+
+`
 
 // Function call to initialize app
 init();

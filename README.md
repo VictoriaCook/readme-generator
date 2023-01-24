@@ -17,6 +17,6 @@ To start the application, please complete the following steps:
 
 ## Video walkthrough
 
-The URL for the deployed page is here: https://victoriacook.github.io/weather-forecast
+A video demonstrating this app's functionality is here: TBC
 
 ---

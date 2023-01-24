@@ -15,11 +15,11 @@ const questions = [
         name: "description",
         message: "Please enter the description of your project",
       },
-      {
-        type: "input",
-        name: "contents",
-        message: "Please enter the table of contents for this readme file",
-      },
+      // {
+      //   type: "input",
+      //   name: "contents",
+      //   message: "Please enter the table of contents for this readme file",
+      // },
       {
         type: "input",
         name: "installation",

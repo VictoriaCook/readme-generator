@@ -52,7 +52,12 @@ const generateMarkdown = (mdData) => {
   
   ## Table of Contents
   
-  ${contents}
+    * Installation information
+    * Usage information
+    * License
+    * Contributions
+    * Tests
+    * Questions
   
   ## Installation
   

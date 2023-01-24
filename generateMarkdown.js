@@ -52,8 +52,8 @@ const generateMarkdown = (mdData) => {
   
   ## Table of Contents
   
-    * Installation information
-    * Usage information
+    * Installation
+    * Usage
     * License
     * Contributions
     * Tests

@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -15,11 +15,11 @@ const questions = [
         name: "description",
         message: "Please enter the description of your project",
       },
-      {
-        type: "input",
-        name: "contents",
-        message: "Please enter the table of contents for this readme file",
-      },
+      // {
+      //   type: "input",
+      //   name: "contents",
+      //   message: "Please enter the table of contents for this readme file",
+      // },
       {
         type: "input",
         name: "installation",
@@ -73,51 +73,6 @@ function init() {
         writeToFile('./output/README.md', mdPageContent);
     });
 }
-
-// Function to generate md file
-// const generateMd = (mdData) => {
-// let { title, description, contents, installation, usage, licence, contribution, tests, github, email } = mdData;
-
-// let content = 
-// `# ${title}
-
-// ## Description
-
-// ${description}
-
-// ## Table of Contents
-
-// ${contents}
-
-// ## Installation
-
-// ${installation}
-
-// ## Usage
-
-// ${usage}
-
-// ## Licence
-
-// ${licence}
-
-// ## Contributions
-
-// ${contribution}
-
-// ## Tests
-
-// ${tests}
-
-// ## Questions
-
-// Feel free to get in touch with any questions by emailing me at ${email}
-
-// My GitHub profile can be accessed at https://github.com/${github}
-
-// `;
-// return content
-// }
 
 // Function call to initialize app
 init();

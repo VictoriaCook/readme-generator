@@ -32,8 +32,8 @@ const questions = [
       },
       {
         type: "list",
-        name: "licence",
-        choices: ["MIT", "Apache", "tbc"],
+        name: "license",
+        choices: ["MIT", "Apache", "GPL", "None"],
       },
       {
         type: "input",

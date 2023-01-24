@@ -16,22 +16,22 @@
   
   z
   
-  ## Licence
+  ## License
   
-  Apache
+  This project is licensed under the [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) license.
   
   ## Contributions
   
-  a
+  z
   
   ## Tests
   
-  a
+  z
   
   ## Questions
   
-  Feel free to get in touch with any questions by emailing me at a
+  Feel free to get in touch with any questions by emailing me at z
   
-  My GitHub profile can be accessed at https://github.com/a
+  My GitHub profile can be accessed at https://github.com/z
   
   
